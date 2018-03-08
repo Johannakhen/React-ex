@@ -1,0 +1,30 @@
+[
+	{
+		"title":"Mon appart poto",
+		"price": "25",
+		"imageUrl":"http://via.placeholder.com/50x50",
+		"rating":"2",
+		"isAvailable":"true"
+	},
+	{
+		"title":"Mon appart pot",
+		"price": "25",
+		"imageUrl":"http://via.placeholder.com/50x50",
+		"rating":"2",
+		"isAvailable":"true"
+	},
+	{
+		"title":"Mon appart po",
+		"price": "25",
+		"imageUrl":"http://via.placeholder.com/50x50",
+		"rating":"2",
+		"isAvailable":"true"
+	},
+	{
+		"title":"Mon appart p",
+		"price": "25",
+		"imageUrl":"http://via.placeholder.com/50x50",
+		"rating":"2",
+		"isAvailable":"true"
+	}
+]
