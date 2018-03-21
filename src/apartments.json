@@ -2,29 +2,29 @@
 	{
 		"title":"Mon appart poto",
 		"price": "25",
-		"imageUrl":"http://via.placeholder.com/50x50",
-		"rating":2,
-		"isAvailable":"true"
+		"imageUrl":"http://www.vitamin-ha.com/wp-content/uploads/2012/12/Funny-Pug-in-Rabbit-Costume.jpg",
+		"rating":4,
+		"isAvailable":false
 	},
 	{
 		"title":"Mon appart pot",
 		"price": "25",
-		"imageUrl":"http://via.placeholder.com/50x50",
+		"imageUrl":"https://www.luvbat.com/uploads/funny_pug_dog_dressed_in_a_sheeps_outfit_2826707358.jpg",
 		"rating":2,
-		"isAvailable":"true"
+		"isAvailable":true
 	},
 	{
 		"title":"Mon appart po",
 		"price": "25",
-		"imageUrl":"http://via.placeholder.com/50x50",
+		"imageUrl":"http://megalawlz.com/wp-content/uploads/2013/02/marilyn-monroe-funny-pug-dog-dressed-up.jpg",
 		"rating":2,
-		"isAvailable":"true"
+		"isAvailable":true
 	},
 	{
 		"title":"Mon appart p",
 		"price": "25",
-		"imageUrl":"http://via.placeholder.com/50x50",
+		"imageUrl":"https://www.luvbat.com/uploads/funny_pug_in_a_hoodie__4207502892.jpg",
 		"rating":2,
-		"isAvailable":"true"
+		"isAvailable":true
 	}
 ]
