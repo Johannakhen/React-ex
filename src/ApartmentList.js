@@ -8,31 +8,33 @@ class ApartmentList extends Component{
     };
     showToggle = () => {
 	    this.showAll = !this.showAll;
- 		}
- 	render(){
- 		return(
-			<div>
-				<button onClick={this.showToggle}>
-				{}
-				{this.state.showAll ? "Show only available" : "Show all"}
-				</button>
+		 }
+ 		render(){
+			const {apartment} = this.props;
+			const {showAll} = this.state;
+ 			return(
+				<div>
+					<button onClick={this.showToggle}>
+					{}
+					{this.state.showAll ? "Show only available" : "Show all"}
+					</button>
+					
+					{/* {apartments.map(apartment => <Apartment apartment={apartment}/>)}
+					{ show &&
+						apartments.map(apartment => <Apartment apartment={apartment}/>)
+					}
+					{ !showAll &&
+						apartments.filter(apartments => aprtments.isAvailable).map(apartment => <Apartment apartment={apartment}/>)
+					} */}
+					{apartments.map(apartment =>
+					(apartments.isAvailable || showAll === "true") && (
+						<Apartment apartment = {apartment}/>
+					)
+					)}
+				</div>
 				
-				{apartments.map(apartment => <Apartment apartment={apartment}/>)}
-				{ show &&
-					apartments.map(apartment => <Apartment apartment={apartment}/>)
-				}
-				{ !showAll &&
-					apartments.filter(apartments => aprtments.isAvailable).map(apartment => <Apartment apartment={apartment}/>)
-				}
-				{apartments.map(apartment =>
-				(apartments.isAvailable || showAll === "true") && (
-					<Apartment apartment = {apartment }/>
-				)
-				)}
-			</div>
-			
-		)
- 	}
+			)
+ 		}
 }
 
 export default ApartmentList;
