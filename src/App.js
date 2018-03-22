@@ -8,19 +8,17 @@ class App extends Component {
     searchValue: ""
   };
   keypressed = e =>{
-    this.setState({searchValue: e.target.value.toLowerCase()});
+    this.setState({searchValue: e.target.value.toLowerCase()})
     console.log(this.state.searchValue)
   };
   render(){
-    const {searchValue} = this.state;
-    const filteredApartments = apartments.filter = () => (
-      apartments.title.includes(this.state.searchValue)
-    )
+    const {searchValue} = this.state
+    const filterApartments = apartments.filter(apartment => apartments.title.includes(this.state.searchValue))
     return(
       <div className="App">
       <input placeholder="search" value={searchValue} onChange={this.keypressed.bind(this)} />
           <p>Apartement list</p>
-          <ApartmentList apartment={filteredApartments}/>
+          <ApartmentList apartment={filterApartments}/>
       </div>
     )
   }
