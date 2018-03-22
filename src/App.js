@@ -13,7 +13,7 @@ class App extends Component {
   };
   render(){
     const {searchValue} = this.state
-    const filterApartments = apartments.filter(apartment => apartments.title.includes(this.state.searchValue))
+    const filterApartments = apartments.filter(apartment => apartment.title.includes(this.state.searchValue))
     return(
       <div className="App">
       <input placeholder="search" value={searchValue} onChange={this.keypressed.bind(this)} />
